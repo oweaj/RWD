@@ -3,3 +3,29 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+body {
+  background-color: var(--green);
+}
+
+@media (min-width: 520px) and (max-width: 799px) {
+  body {
+    background-color: var(--accent-opacity-color);
+  }
+}
+@media (min-width: 800px) {
+  body {
+    background-color: var(--blue);
+  }
+}
+
+.news__videoContainer {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.book__cover {
+  width: 10%;
+  height: auto;
+}
