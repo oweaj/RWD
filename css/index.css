@@ -556,6 +556,7 @@ input[type="search"] {
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
+    gap: var(--spacing-base);
   }
 
   /* 데스크탑 트위터 */
