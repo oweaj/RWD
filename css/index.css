@@ -100,6 +100,7 @@ input[type="search"] {
 
 /* 공통 메인 콘텐츠 */
 .appMain {
+  display: grid;
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
