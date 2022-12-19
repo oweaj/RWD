@@ -102,23 +102,23 @@ input[type="search"] {
 
 /* 공통 추천서적 */
 .book {
-  grid-area: 2/1/4/5;
+  grid-area: book;
 }
 /* 공통 새소식 */
 .news {
-  grid-area: 1/1/2/13;
+  grid-area: news;
 }
 /* 공통 게시판 */
 .board {
-  grid-area: 3/6/4/13;
+  grid-area: board;
 }
 /* 공통 인기 사이트 */
 .favorite {
-  grid-area: 2/10/3/13;
+  grid-area: favorite;
 }
 /* 공통 트위터 */
 .twitter {
-  grid-area: 2/5/3/10;
+  grid-area: twitter;
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -289,6 +289,10 @@ input[type="search"] {
   .appMain {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+    grid-template-areas:
+      "news news news news news news news news news news news news"
+      "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+      "book book book book . board board board board board board board";
   }
 }
 
