@@ -100,6 +100,17 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 메인 콘텐츠 섹션 제목 */
+[class*="__title"] {
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
+[class*="__enTitle"] {
+  font-size: var(--text-base);
+  font-weight: 400;
+}
+
 /* 공통 추천서적 */
 .book {
   grid-area: book;
