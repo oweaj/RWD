@@ -227,6 +227,12 @@ input[type="search"] {
   .appMain {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    grid-template-areas:
+      "book"
+      "news"
+      "board"
+      "favorite"
+      "twitter";
   }
 }
 
@@ -287,6 +293,10 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
+    max-width: var(--container-width);
+    border: 5px solid blue;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
