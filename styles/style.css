@@ -192,11 +192,6 @@ input[type="search"] {
   font-size: var(--text-xl);
 }
 
-/* .book__info :nth-child(1),
-.book__info :nth-child(2) {
-  display: inline-block;
-} */
-
 /* 공통 새소식 */
 .news {
   grid-area: news;
