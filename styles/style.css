@@ -258,6 +258,37 @@ input[type="search"] {
   grid-area: twitter;
 }
 
+.twitter__userInfo dd {
+  display: inline;
+}
+
+.twitter__userName {
+  margin-right: var(--spacing-xxs);
+}
+
+.twitter__userProfile {
+  float: right;
+  min-width: 50px;
+  max-width: 100px;
+  aspect-ratio: 1/1;
+  margin-left: var(--spacing-xs);
+  shape-outside: circle(50%);
+}
+
+.twitter__userProfileImage {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #212121;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 30% 40%;
+}
+
+.twitter__date {
+  display: block;
+  margin-top: var(--spacing-xs);
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
@@ -378,6 +409,11 @@ input[type="search"] {
     margin-left: var(--spacing-xs);
     color: var(--accent-favorite);
     font-size: var(--text-sm);
+  }
+
+  /* 모바일 트위터 */
+  .twitter__userProfile {
+    width: 50px;
   }
 }
 
