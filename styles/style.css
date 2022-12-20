@@ -163,6 +163,10 @@ input[type="search"] {
   margin-top: var(--spacing-base);
 }
 
+[class*="__item"] {
+  line-height: 1.6;
+}
+
 /* 공통 추천서적 */
 .book {
   grid-area: book;
@@ -206,7 +210,44 @@ input[type="search"] {
 /* 공통 게시판 */
 .board {
   grid-area: board;
+  display: flex;
+  flex-flow: row wrap;
 }
+
+.board__title {
+  flex: 1 1 auto;
+}
+
+.board__list {
+  display: flex;
+  flex-flow: column nowrap;
+  order: 1;
+  flex: 1 1 auto;
+  gap: var(--spacing-xs);
+}
+
+.board__item {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.board__link {
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: aqua;
+}
+
+.board__date {
+  flex: 0 0 auto;
+  background-color: blue;
+}
+
+.board__more {
+  padding: var(--spacing-sm);
+}
+
 /* 공통 인기 사이트 */
 .favorite {
   grid-area: favorite;
