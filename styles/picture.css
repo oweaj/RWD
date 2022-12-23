@@ -1,0 +1,11 @@
+.svg1 path {
+  transition: all 0.4s;
+}
+
+.svg1 path {
+  fill: green;
+}
+
+.svg1 path:hover {
+  fill: red;
+}
